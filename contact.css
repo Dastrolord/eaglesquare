@@ -1,0 +1,169 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Images/view-new-york-city-night.jpg);
+    background-size: cover;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 960px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+@media screen and (min-width:1200px) {
+    body{
+        font-size: 20px;
+    }
+    .container{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    body{
+        font-size: 14px;
+    }
+    .container{
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.name h1{
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    font-family: 'Tahoma';
+}
+.sitenav{
+    height: 50px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
+.sitenav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.sitenav li{
+    list-style: none;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.sitenav a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    margin-right: 50px;
+    margin-left: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.sitenav a.active{
+    color: red;
+    border-bottom: 3px solid red;
+}
+.sitenav a:hover{
+    color: red;
+    border-bottom: 3px solid red;
+    transition: 0.2s;
+}
+.devtonic{
+    background-color: white;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 500px;
+    width: max-content;
+    border-radius: 5px;
+}
+.devtonic:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.devtonic h2{
+    color: black;
+}
+.contactform{
+    height: 180px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    height: 30px;
+    width: 70%;
+    margin-left: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+input::placeholder{
+    font-size: 20px;
+}
+textarea{
+    height: 150px;
+    width: 70%;
+    margin-left: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+textarea::placeholder{
+    font-size: 20px;
+}
+.sub{
+    width: 30%;
+    font-size: 25px;
+    background-color: rgb(240, 240, 240);
+    color: red;
+    border: none;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.251);
+}
+.sub:hover{
+    background-color: black;
+    color: white;
+}
+.group:before,
+.group:after{
+    display: table;
+    content: "";
+}
+.group:after{
+    clear: both;
+}
+.group{
+    zoom: 1;
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
