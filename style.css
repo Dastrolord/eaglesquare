@@ -21,29 +21,16 @@ body{
     }
     .container{
         max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: -18px;
-        margin-bottom: 0;
     }
-    
 }
 @media screen and (max-width:480px) {
     body{
         font-size: 14px;
     }
     .container{
-        max-width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
+        max-width: auto;
         padding-left: 10px;
         padding-right: 10px;
-        margin-top: -18px;
-        margin-bottom: 0;
     }
 }
 .name{
@@ -97,6 +84,14 @@ body{
 .breakingNews a{
     text-decoration: none;
     color: black;
+}
+@media screen and (max-width:480px) {
+    .breakingNews img{
+        width: auto;
+    }
+    .breakingNews a{
+        font-size: 14px;
+    }
 }
 .topNews a{
     text-decoration: none;
@@ -155,13 +150,13 @@ input{
         width: 400px;
     }
 }
-@media screen and(max-width:480px) {
-    .main-area{
-        width: 160px;
-        margin-right: 20px;
+@media screen and(max-width:700px) {
+    .main-area, .content-area{
+        width: auto;
+        float: none;
     }
-    .content-area{
-        width: 120px;
+    .main-area{
+        padding: 0;
     }
 }
 .group:before,
@@ -214,6 +209,11 @@ input{
     background-color: #ababab1e;
     width: 100%;
     border-radius: 20px;
+}
+@media screen and (max-width:480px) {
+    .picNews{
+        width: auto;
+    }
 }
 .picNews h2{
     text-align: center;
