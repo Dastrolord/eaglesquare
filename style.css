@@ -87,10 +87,10 @@ body{
 }
 @media screen and (max-width:480px) {
     .breakingNews img{
-        width: auto;
+        width: 100%;
     }
     .breakingNews a{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 .topNews a{
@@ -152,7 +152,7 @@ input{
 }
 @media screen and(max-width:700px) {
     .main-area, .content-area{
-        width: auto;
+        width: 100%;
         float: none;
     }
     .main-area{
@@ -180,6 +180,12 @@ input{
     z-index: 3;
     padding-left: 20px;
     text-align: center;
+}
+@media screen and (max-width:480px) {
+    .topNews{
+        font-size: 14px;
+        width: auto;
+    }
 }
 .top1{
     height: 100px;
