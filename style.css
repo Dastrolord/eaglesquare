@@ -15,20 +15,20 @@ body{
     margin-top: -18px;
     margin-bottom: 0;
 }
-@media screen and (min-width:1200px) {
-    body{
-        font-size: 20px;
-    }
+@media screen and (min-width: 1200px){ /* laptop screen */
     .container{
         max-width: 1200px;
+        padding-left: 40px;
+        padding-right: 40px;
+
     }
 }
-@media screen and (max-width:480px) {
-    body{
-        font-size: 14px;
+@media screen and (max-width: 480px){ /* mobile device*/
+    .body{
+        font-size: 12px;
     }
     .container{
-        max-width: auto;
+        max-width: 450px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -43,8 +43,13 @@ body{
     font-size: 25px;
     font-family: 'Tahoma';
 }
+@media screen and (max-width:480px) {
+    .name h1{
+        font-size: 20px;
+    }
+}
 .sitenav{
-    height: 50px;
+    height: auto;
     border-top: 3px solid gray;
     border-bottom: 3px solid gray;
 }
@@ -72,6 +77,7 @@ body{
     color: black;
     font-weight: 600;
 }
+
 .sitenav a.active{
     color: red;
     border-bottom: 3px solid red;
@@ -81,18 +87,23 @@ body{
     border-bottom: 3px solid red;
     transition: 0.2s;
 }
+@media screen and (max-width: 700px) {
+    .sitenav{
+        width: 450px;
+        height: auto;
+    }
+    .sitenav a{
+        margin-right: 2px;
+        margin-left: 2px;
+        font-size: 10px;
+    }
+
+}
 .breakingNews a{
     text-decoration: none;
     color: black;
 }
-@media screen and (max-width:480px) {
-    .breakingNews img{
-        width: 100%;
-    }
-    .breakingNews a{
-        font-size: 12px;
-    }
-}
+
 .topNews a{
     text-decoration: none;
     color: black;
@@ -104,6 +115,12 @@ body{
 .devtonic{
     margin-top: 20px;
 }
+@media screen and (max-width:480px){
+    .devtonic{
+        margin-top: 2px;
+    }
+}
+
 .contactform{
     background: rgb(255, 239, 239);
     height: 180px;
@@ -111,6 +128,12 @@ body{
     text-align: center;
     border-radius: 15px;
 }
+@media screen and (max-width: 480px){
+    .contactform{
+        width: 95%;
+    }
+}
+
 label{
     font-size: 18px;
     font-weight: 500;
@@ -141,22 +164,26 @@ input{
     width: 300px;
     margin-top: 18px;
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1200px){
     .main-area{
         width: 700px;
-        margin-right: 30px;
+        margin-right: 20px;
+        float: left;
     }
     .content-area{
-        width: 400px;
+        width: 350px;
+        float: left;
     }
 }
-@media screen and(max-width:700px) {
-    .main-area, .content-area{
-        width: 100%;
-        float: none;
-    }
+@media screen and (max-width:480px){
     .main-area{
-        padding: 0;
+        width: 450px;
+        margin-right: 5px;
+        float: left;
+    }
+    .content-area{
+        width: 100%;
+        float: left;
     }
 }
 .group:before,
@@ -181,12 +208,7 @@ input{
     padding-left: 20px;
     text-align: center;
 }
-@media screen and (max-width:480px) {
-    .topNews{
-        font-size: 14px;
-        width: auto;
-    }
-}
+
 .top1{
     height: 100px;
     margin-top: 5px;
@@ -204,6 +226,7 @@ input{
 .top1 p{
     font-size: 20px;
 }
+
 .breakingNews img{
     width: 100%;
 }
@@ -216,11 +239,7 @@ input{
     width: 100%;
     border-radius: 20px;
 }
-@media screen and (max-width:480px) {
-    .picNews{
-        width: auto;
-    }
-}
+
 .picNews h2{
     text-align: center;
     color: red;
@@ -228,6 +247,58 @@ input{
 .picNews h4{
     font-size: 16px;
     margin-top: -1px;
+}
+.picNewsBg{
+    background: white;
+    width: 90%;
+    height: auto;
+    float: left;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-align: left;
+}
+.picNewsBg img{
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.picNewsBg span{
+    text-align: center;
+    color: red;
+    font-size: 13px;
+}
+@media screen and (max-width: 700px) {
+    .picNewsBg{
+        float: left;
+        width: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 2px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .picNewsBg img{
+        margin-left: 5px;
+        margin-right: 8px;
+    }
+    .picNewsBg p{
+        margin-top: -5px;
+        text-align: left;
+    }
+    .picNewsBg h3{
+        margin-top: -5px;
+    }
+    .picNewsBg span{
+        margin-right: 15px;
+    }
+
+}
+.dateName{
+    text-align: right;
 }
 .image1{
     text-align: center;

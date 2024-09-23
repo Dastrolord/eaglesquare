@@ -13,30 +13,23 @@ body{
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+    margin-top: -18px;
+    margin-bottom: 0;
 }
-@media screen and (min-width:1200px) {
-    body{
-        font-size: 20px;
-    }
+@media screen and (min-width: 1200px){ /* laptop screen */
     .container{
         max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+
     }
-    
 }
-@media screen and (max-width:480px) {
-    body{
-        font-size: 14px;
+@media screen and (max-width: 480px){ /* mobile device*/
+    .body{
+        font-size: 12px;
     }
     .container{
-        max-width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
+        max-width: 450px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -50,6 +43,11 @@ body{
     color: red;
     font-size: 25px;
     font-family: 'Tahoma';
+}
+@media screen and (max-width:480px) {
+    .name h1{
+        font-size: 20px;
+    }
 }
 .sitenav{
     height: 50px;
@@ -89,6 +87,18 @@ body{
     border-bottom: 3px solid red;
     transition: 0.2s;
 }
+@media screen and (max-width: 700px) {
+    .sitenav{
+        width: 450px;
+        height: auto;
+    }
+    .sitenav a{
+        margin-right: 2px;
+        margin-left: 2px;
+        font-size: 10px;
+    }
+
+}
 .devtonic{
     background-color: white;
     margin-top: 100px;
@@ -106,12 +116,29 @@ body{
 .devtonic h2{
     color: black;
 }
+@media screen and (max-width:700px){
+    .devtonic{
+        width: 380px;
+        height: 350px;
+    }
+    .devtonic h2{
+        font-size: 17px;
+    }
+}
 .contactform{
     height: 180px;
     padding: 10px 10px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+@media screen and (max-width: 700px) {
+    .contactform{
+        
+        padding: 5px 5px;
+        margin-top: -20px;
+    }
+    
 }
 input{
     height: 30px;
@@ -146,6 +173,30 @@ textarea::placeholder{
 .sub:hover{
     background-color: black;
     color: white;
+}
+@media screen and (max-width: 700px) {
+    input{
+        height: 20px;
+        margin-left: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    input::placeholder{
+        font-size: 15px;
+    }
+    textarea{
+        height: 100px;
+        margin-left: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    textarea::placeholder{
+        font-size: 15px;
+    }
+    .sub{
+        width: 30%;
+        font-size: 15px;
+    }
 }
 .group:before,
 .group:after{
